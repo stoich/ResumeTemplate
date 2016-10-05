@@ -1,7 +1,16 @@
-<ul style="float: left">
-    <li ng-repeat="item in $ctrl.section">
-        <span>{{item.timeRange}}</span>
-        <span>{{item.title}}</span>
-        <span>{{item.description}}</span>
+<ul class="list" style="float: left">
+
+    <li class="experienceListItem" ng-repeat="item in $ctrl.section">
+        <div class="experienceLeftPanel">
+
+            <span>{{item.timeRange}}</span>
+        </div>
+
+        <div class="experienceRightPanel">
+            <span class="title">{{item.title}}</span>
+            <span class="experience">{{item.description}}</span>
+            <span ng-if="item.technology" class="technologies">Technologies used:{{item.technology}}</span>
+        </div>
     </li>
+
 </ul>

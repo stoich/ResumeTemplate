@@ -64,10 +64,12 @@ var resume = {
     others: [
 
         {
+            timeRange: "Feb 2015",
             title: "Teaching kids",
             description: "I worked with kids and stuff."
         },
         {
+            timeRange: "Feb 2015",
             title: "Teaching pets",
             description: "I taught my cat to write C# code."
         }

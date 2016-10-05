@@ -1,6 +1,7 @@
 #mainInfo #leftPanel {
+   /* border-right: thin red solid;*/
     float: left;
-    width: 31.25%;
+    width: 22%;
 }
 
 #mainInfo #leftPanel img {

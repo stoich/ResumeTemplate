@@ -6,7 +6,7 @@
 
     <link href="style/global.css" rel="stylesheet" type="text/css">
     <link href="style/main.css" rel="stylesheet" type="text/css">
-    <link href="style/eduExpr.css" rel="stylesheet" type="text/css">
+    <link href="style/experience.css" rel="stylesheet" type="text/css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
@@ -80,14 +80,24 @@
 
     <div id="education">
 
-        <h3 class="sectionTitle">Education</h3>
+        <h3 class="sectionTitle">Education:</h3>
 
         <experience section="ctrl.resume.education"></experience>
 
     </div>
-    <div id="experience"></div>
-    <div id="projects"></div>
-    <div id="other"></div>
+    <div id="experience">
+
+        <h3 class="sectionTitle">Work Experience:</h3>
+        <experience section="ctrl.resume.experience"></experience>
+
+    </div>
+    <div id="projects">
+        <h3 class="sectionTitle">Projects:</h3>
+        <experience section="ctrl.resume.projects"></experience>
+    </div>
+    <div id="other"><h3 class="sectionTitle">other accomplishments:</h3>
+        <experience section="ctrl.resume.others"></experience>
+    </div>
 
 </div>
 

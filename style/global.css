@@ -2,10 +2,19 @@ a:link {
     color: #00b5af;
 }
 
+a:visited {
+    text-decoration: none;
+    color: #00b5af;
+}
+
 .sectionTitle {
+    margin-bottom: -5px;
     float:left;
     font-family: Arial;
     text-transform: uppercase;
     font-weight: bold;
     width: 100%;
+    font-size: 15px;
+   /* margin-top: -10px;
+    margin-bottom: -10px;*/
 }
