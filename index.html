@@ -6,16 +6,18 @@
 
     <link href="style/global.css" rel="stylesheet" type="text/css">
     <link href="style/main.css" rel="stylesheet" type="text/css">
+    <link href="style/eduExpr.css" rel="stylesheet" type="text/css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
     <script src="js/info.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/experience.js"></script>
 
 </head>
 <body ng-app="ngRepeat">
 
-<div ng-controller="repeatController">
+<div ng-controller="repeatController as ctrl">
 
     <div id="mainInfo">
 
@@ -75,9 +77,14 @@
     </div>
 
     <img src="img/bluePixel.png" style='width: 100%; height: 3px;float: left; margin-top:20px;'>
-    <!--<hr style="margin-top:20px; width: 100%; border: 2px #00bfb9 solid;">-->
 
-    <div id="education"></div>
+    <div id="education">
+
+        <h3 class="sectionTitle">Education</h3>
+
+        <experience section="ctrl.resume.education"></experience>
+
+    </div>
     <div id="experience"></div>
     <div id="projects"></div>
     <div id="other"></div>
