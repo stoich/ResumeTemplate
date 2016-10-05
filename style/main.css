@@ -1,0 +1,78 @@
+#mainInfo #leftPanel {
+    float: left;
+    width: 31.25%;
+}
+
+#mainInfo #leftPanel img {
+    width: 125px;
+    height: 125px;
+}
+
+#mainInfo #leftPanel #nameAndTitle {
+    font-weight: bold;
+    font-family: Arial;
+}
+
+#mainInfo #leftPanel #nameAndTitle #name {
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+#mainInfo #leftPanel #nameAndTitle #title{
+
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+#mainInfo #leftPanel #name {
+    float: left;
+}
+
+#mainInfo #leftPanel #contact .contactLabel {
+    font-size: 12px;
+    font-family: "Arial";
+}
+
+#mainInfo #leftPanel #contact .contactDescription {
+    font-size: 12px;
+    font-family: "Arial";
+}
+
+#mainInfo #leftPanel #contact img {
+    margin-right: 3px;
+    width: 16.5px;
+    height: 16.5px;
+    float: left
+}
+
+#mainInfo #rightPanel {
+    float: right;
+    width: 68.75%;
+}
+
+#mainInfo #description {
+    font-size: 14px;
+    font-family: "Arial";
+}
+
+#mainInfo .skill .label {
+    font-size: 15.5px;
+    font-weight: bold;
+}
+
+#mainInfo .skill .description {
+    font-size: 16px;
+}
+
+#mainInfo #rightPanel ul {
+    padding-left: 0px;
+}
+
+#mainInfo #rightPanel li {
+    margin-top: 3px;
+    list-style-type: none;
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+
+    <link href="style/global.css" rel="stylesheet" type="text/css">
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body ng-app="ngRepeat">
+
+<div ng-controller="repeatController">
+
+    <div id="mainInfo">
+
+        <div id="leftPanel">
+            <div id="nameAndTitle">
+                <img ng-src={{mainInfo.profilePicUrl}}>
+                <br>
+                <span id="name">{{mainInfo.name}}</span>
+                <br>
+                <span id="title">{{mainInfo.title}}</span>
+            </div>
+
+            <div id="contact">
+
+                <br>
+                <br>
+                <span style="font-size: 13px; font-family: Arial">CONTACT</span>
+                <br>
+
+                <div id="email">
+                    <span class="contactLabel">E:</span>
+                    <span class="contactDescription"><a ng-href="mailto:{{mainInfo.contact.email}}">{{mainInfo.contact.email}}</a></span>
+                </div>
+                <div id="mobile">
+                    <span class="contactLabel">M:</span>
+                    <span class="contactDescription">{{mainInfo.contact.phone}}</span>
+                </div>
+                <div id="linkedin">
+                    <img src="img/linkedin.png" class="contactLabel">
+                    <span class="contactDescription"><a
+                            ng-href="{{mainInfo.contact.linkedin}}">View LinkedIn profile</a></span>
+                </div>
+                <div id="github">
+                    <img src="img/github_icon.png" class="contactLabel">
+                    <span class="contactDescription"><a
+                            ng-href="{{mainInfo.contact.github}}">View GitHub profile</a></span>
+                </div>
+            </div>
+        </div>
+        <div id="rightPanel">
+
+            <span id="description">{{mainInfo.about}}</span>
+
+            <ul class="skills">
+                <li class="skill" ng-repeat="skill in mainInfo.skills">
+                    <span class="label">{{skill.title}}</span>
+                    <span class="description">{{skill.description}} </span>
+                </li>
+            </ul>
+            <hr style="border: 2px #cccccc solid">
+            <div id="language">
+                <span class="label" style="font-size: 16px;font-weight: bold;">Spoken language proficiency:</span>
+                <span style="font-size:14px;">{{mainInfo.languages}}</span>
+            </div>
+        </div>
+
+    </div>
+
+    <img src="img/bluePixel.png" style='width: 100%; height: 3px;float: left; margin-top:20px;'>
+    <!--<hr style="margin-top:20px; width: 100%; border: 2px #00bfb9 solid;">-->
+
+    <div id="education"></div>
+    <div id="experience"></div>
+    <div id="projects"></div>
+    <div id="other"></div>
+
+</div>
+
+</body>
+</html>
